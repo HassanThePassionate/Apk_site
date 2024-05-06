@@ -2,32 +2,209 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.header {
+  position: fixed;
+  top: 0;
+  transform: translateZ(0);
+  background-color: hsla(0, 0%, 100%, 0.8);
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 76%, 0.25);
+  grid-template-rows: 70px;
+  height: 88px;
+  position: relative;
+
+  width: 100%;
+  z-index: 50;
+}
+.header::before {
+  backdrop-filter: none;
+  background: #fff;
+  border-radius: 0 0 24px 24px;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.header_wrapper {
+  height: 100%;
+  position: relative;
+  z-index: 30;
+}
+.header_wrapper::before {
+  opacity: 0;
+  background-color: #fff;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  will-change: opacity;
+}
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+.logo {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  width: 110px;
+}
+.logo img {
+  height: 18px;
+  width: 104px;
+  transform: translateY(0);
+}
+.navbar {
+  text-align: right;
+  flex-grow: 2;
+  margin-inline-end: 72px;
+  order: 2;
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  width: auto;
+}
+.list {
+  text-align: left;
+  display: inline-flex;
+  height: 100%;
+  padding: 0;
+  width: auto;
+}
+.list li {
+  opacity: 1;
+  transform: translateZ(0);
+  align-items: center;
+  height: 100%;
+  margin: 0 8px 0 0;
+  overflow: visible;
+  padding: 0;
+  display: flex;
+}
+.list li::before {
+  background-color: #34a853;
+  bottom: 15%;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  width: 100%;
+  will-change: transform;
+}
+.list li button {
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+  padding: 6px;
+  position: inherit;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 40px;
+  font-weight: 500;
+  line-height: 24px;
+  transition: color 0.2s ease-in;
+  isolation: isolate;
+  cursor: pointer;
+}
+.list li button .icon {
+  margin-left: 4px;
+  padding: 0;
+  transition: 0.3s ease-in-out;
+}
+.list li:hover {
+  .dropdown {
+    opacity: 1;
+    visibility: visible;
+  }
+  .icon {
+    transform: rotate(180deg);
+  }
+  text-decoration: underline;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.dropdown {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 76%, 0.25);
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 88px;
+  transform: scale(0.97);
+  transition: 0.1s ease-in-out;
+  visibility: hidden;
+  z-index: 50;
+}
+.menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding: 30px;
+  position: relative;
+}
+.menu_link {
+  color: #000;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 6px;
+  white-space: nowrap;
+}
+.menu_link:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 1160px) {
+  .navbar {
+    text-align: right;
+    flex-grow: 2;
+    margin-inline-end: 72px;
+    order: 2;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    width: auto;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (min-width: 1440px) {
+  .list li {
+    margin: 0 32px 0 0;
+  }
+  .container {
+    margin: 0 auto !important;
+    max-width: 1280px;
+  }
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (min-width: 1024px) {
+  .container {
+    margin: 0 80px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    margin: 0 32px;
+  }
+}
+@media only screen and (min-width: 1160px) {
+  .android-header {
+    border-radius: 0 0 24px 24px;
+    min-height: 88px;
   }
 }

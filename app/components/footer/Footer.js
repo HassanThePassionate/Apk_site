@@ -5,9 +5,17 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { GrAndroid } from "react-icons/gr";
+import { IoLogoAndroid } from "react-icons/io5";
+import { AiOutlineSafety } from "react-icons/ai";
+import { IoAccessibilitySharp } from "react-icons/io5";
+import { FiMessageSquare } from "react-icons/fi";
+import { SiEnterprisedb } from "react-icons/si";
+import { FaShareAlt } from "react-icons/fa";
+import { LuMenuSquare } from "react-icons/lu";
 const Footer = () => {
   return (
-    <footer className='footer_wrapper'>
+    <footer className='footer_wrapper mt-[40px]'>
       <div className='container'>
         <div className='social flex items-center gap-5 py-[40px]'>
           <span>Follow us</span>
@@ -36,60 +44,69 @@ const Footer = () => {
         </div>
         <div className='footer'>
           <ul className='footer_list'>
-            <h5>Privacy & Safety</h5>
+            <h5>Discover Android</h5>
             <li className='iteam'>
-              <Link href='#'>Security</Link>
+              <LuMenuSquare size={16} />
+              <Link href='#'>Lastest Features</Link>
             </li>
             <li className='iteam'>
-              <Link href='#'>Privacy</Link>
+              <GrAndroid size={16} />
+              <Link href='#'>AI on Android</Link>
             </li>
             <li className='iteam'>
-              <Link href='#'>Physical Safety</Link>
+              <IoLogoAndroid size={16} />
+              <Link href='#'>Android 14</Link>
             </li>
             <li className='iteam'>
-              <Link href='#'>Find my Device</Link>
-            </li>
-          </ul>
-          <ul className='footer_list'>
-            <h5>Accessibility</h5>
-            <li className='iteam'>
-              <Link href='#'>Security</Link>
+              <AiOutlineSafety size={16} />
+              <Link href='#'>Safety</Link>
             </li>
             <li className='iteam'>
-              <Link href='#'>Privacy</Link>
+              <IoAccessibilitySharp size={16} />
+              <Link href='#'>Accessibility</Link>
             </li>
             <li className='iteam'>
-              <Link href='#'>Physical Safety</Link>
-            </li>
-          </ul>
-          <ul className='footer_list'>
-            <h5>More from Android</h5>
-            <li className='iteam'>
-              <Link href='#'>Security</Link>
+              <FiMessageSquare size={16} />
+              <Link href='#'>Google Messages</Link>
             </li>
             <li className='iteam'>
-              <Link href='#'>Privacy</Link>
+              <SiEnterprisedb size={16} />
+              <Link href='#'>Enterprise</Link>
             </li>
             <li className='iteam'>
-              <Link href='#'>Physical Safety</Link>
+              <IoLogoAndroid size={16} />
+              <Link href='#'>Android Auto</Link>
             </li>
             <li className='iteam'>
-              <Link href='#'>Find my Device</Link>
-            </li>
-            <li className='iteam'>
-              <Link href='#'>Find my Device</Link>
+              <FaShareAlt size={16} />
+              <Link href='#'>Quick Share</Link>
             </li>
           </ul>
           <ul className='footer_list'>
-            <h5>Support</h5>
+            <h5>Switch & transfer</h5>
             <li className='iteam'>
-              <Link href='#'>Security</Link>
+              <Link href='#'>Why Android</Link>
             </li>
             <li className='iteam'>
-              <Link href='#'>Privacy</Link>
+              <Link href='#'>How to switch</Link>
             </li>
             <li className='iteam'>
-              <Link href='#'>Physical Safety</Link>
+              <Link href='#'>Transfer your data</Link>
+            </li>
+          </ul>
+          <ul className='footer_list'>
+            <h5>Explore devices</h5>
+            <li className='iteam'>
+              <Link href='#'>Phones</Link>
+            </li>
+            <li className='iteam'>
+              <Link href='#'>Find your phone</Link>
+            </li>
+            <li className='iteam'>
+              <Link href='#'>Tablets</Link>
+            </li>
+            <li className='iteam'>
+              <Link href='#'>Connected devices</Link>
             </li>
           </ul>
         </div>

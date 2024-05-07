@@ -9,7 +9,7 @@ const T_Card = () => {
         <h2>Media apps</h2>
         <p>
           Learn how to build and extend engaging media experiences to users
-          across Android's multidevice ecosystem.
+          across Android&apos;s multidevice ecosystem.
         </p>
         <button className='hero_btn btm'>Learn more</button>
       </div>

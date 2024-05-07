@@ -15,7 +15,7 @@ import { FaShareAlt } from "react-icons/fa";
 import { LuMenuSquare } from "react-icons/lu";
 const Footer = () => {
   return (
-    <footer className='footer_wrapper mt-[40px]'>
+    <footer className='footer_wrapper '>
       <div className='container'>
         <div className='social flex items-center gap-5 py-[40px]'>
           <span>Follow us</span>

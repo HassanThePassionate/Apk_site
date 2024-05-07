@@ -7,6 +7,14 @@ const Hero = () => {
   return (
     <div className='hero_wrapper'>
       <div className='container'>
+        <h2 className='text-[40px] font-semibold leading-10 pt-11 mb-[16px]'>
+          For experienced Android developers
+        </h2>
+        <p className='w-[60%]'>
+          Dive deeper into more advanced topics in Modern Android Development.
+          These resources assume that you have existing knowledge of how to
+          build Android apps.
+        </p>
         <div className='hero_cards'>
           <Card
             title='Google I/O program details are now live!'
@@ -23,7 +31,9 @@ const Hero = () => {
       </div>
       <div className='main mt-[50px] '>
         <div className='container'>
-          <h2 className='text-4xl font-bold pt-[50px]'>Developer Center</h2>
+          <h2 className='text-[40px] font-semibold leading-10 pt-[50px]'>
+            Developer Center
+          </h2>
           <div className='hero_cards'>
             <T_Card />
             <T_Card />

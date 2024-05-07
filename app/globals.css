@@ -438,6 +438,17 @@
   width: 12px;
   background-color: #34a853;
 }
+
+.faq {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq_wrap {
+  padding: 24px 16px 24px 24px;
+  background-color: #f7f9fa;
+  border-radius: 10px;
+}
 @media (min-width: 1440px) {
   .list li {
     margin: 0 32px 0 0;

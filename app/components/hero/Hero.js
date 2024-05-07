@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import T_Card from "../t_cards/T_Card";
+import Testmoinal from "../testmoinal/Testmoinal";
 
 const Hero = () => {
   return (
@@ -28,6 +29,7 @@ const Hero = () => {
             <T_Card />
             <T_Card />
           </div>
+          <Testmoinal />
         </div>
       </div>
     </div>

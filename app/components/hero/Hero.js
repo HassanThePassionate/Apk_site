@@ -39,6 +39,9 @@ const Hero = () => {
             <T_Card />
             <T_Card />
           </div>
+          <h2 className='text-[40px] font-semibold leading-10 pt-11'>
+            Kotlin language training
+          </h2>
           <Testmoinal />
         </div>
       </div>

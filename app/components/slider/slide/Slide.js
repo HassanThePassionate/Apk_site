@@ -11,7 +11,7 @@ const Slide = () => {
         </h2>
       </div>
       <div className='right_slide'>
-        <Image src='/3.webp' alt='img' height={480} width={480} />
+        <Image src='/3.webp' alt='img' height={600} width={600} />
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ const Slider = () => {
       <div className='container'>
         <Swiper
           slidesPerView={"auto"}
-          spaceBetween={10}
+          spaceBetween={20}
           onSwiper={(swiper) => setSwiperInstance(swiper)}
           navigation={{
             nextEl: "#nexts",
@@ -31,24 +31,25 @@ const Slider = () => {
           }}
           modules={[Navigation]}
           className='mySwiper'
+          style={{ width: "100vw", overflow: "hidden" }}
         >
           <div className='sliders'>
-            <SwiperSlide>
+            <SwiperSlide style={{ width: "1250px" }}>
               <Slide />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide style={{ width: "1250px" }}>
               <Slide />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide style={{ width: "1250px" }}>
               <Slide />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide style={{ width: "1250px" }}>
               <Slide />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide style={{ width: "1250px" }}>
               <Slide />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide style={{ width: "1250px" }}>
               <Slide />
             </SwiperSlide>
           </div>

@@ -6,6 +6,10 @@
 * {
   font-family: "google_Sans";
 }
+html,
+body {
+  overflow-x: hidden;
+}
 @font-face {
   font-family: "google_Sans";
   src: url("../fonts/Regular.ttf");

@@ -12,8 +12,8 @@ const Video_com = () => {
             Welcome to Auto Refresh Plus Your ultimate solution for automating
             webpage refreshes and monitoring dynamic content effortlessly. With
             a suite of powerful features, Auto Refresh Plus enhances your
-            browsing experience by ensuring you're always up-to-date with the
-            latest changes on your favorite websites
+            browsing experience by ensuring you&apos;re always up-to-date with
+            the latest changes on your favorite websites
           </p>
           <button className='chorme'>
             <svg

@@ -603,6 +603,7 @@ body {
   width: 100%;
   padding: 56px;
   border-radius: 30px;
+  padding-top: 90px;
 }
 @media (min-width: 1440px) {
   .list li {

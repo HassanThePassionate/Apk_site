@@ -1,11 +1,18 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 
-const Slide = () => {
+const Slide = ({ id, activeSlide }) => {
   return (
     <div className='slide'>
       <div className='lines'>
-        <div className='line'></div>
+        {[0, 1, 2, 3, 4].map((index) => (
+          <div
+            key={index}
+            className={`line ${
+              activeSlide === id && activeSlide >= index ? "filled" : ""
+            }`}
+          ></div>
+        ))}
       </div>
       <div className='left_slide flex-1'>
         <h2 className='text-[40px] font-bold'>

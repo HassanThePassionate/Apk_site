@@ -9,7 +9,7 @@ const Video_com = () => {
             Youtube Video <strong className='st'>Downloader</strong>
           </h1>
           <p className='parap'>
-            Welcome to Auto Refresh Plus – Your ultimate solution for automating
+            Welcome to Auto Refresh Plus Your ultimate solution for automating
             webpage refreshes and monitoring dynamic content effortlessly. With
             a suite of powerful features, Auto Refresh Plus enhances your
             browsing experience by ensuring you're always up-to-date with the

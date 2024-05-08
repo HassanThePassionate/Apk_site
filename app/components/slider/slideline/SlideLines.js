@@ -8,7 +8,7 @@ const SlideLines = ({ totalSlides, activeSlide }) => {
         key={i}
         className={`slide-line ${
           activeSlide === i ? "bg-black" : "bg-[#DADCE0]"
-        } h-[3px] w-20 relative top-12 z-20  left-14`}
+        } h-[3px] rounded-lg w-20 relative top-12 z-20  left-14`}
       ></div>
     );
   }

@@ -1,9 +1,22 @@
+"use client";
+import React, { useState, useEffect } from "react";
 import style from "./button.module.css";
+const Buttons = ({ next, prev, activeSlide, totalSlides }) => {
+  const [isPrevDisabled, setIsPrevDisabled] = useState(true);
+  const [isNextDisabled, setIsNextDisabled] = useState(false);
 
-const Buttons = ({ next, prev }) => {
+  useEffect(() => {
+    setIsPrevDisabled(activeSlide === 0);
+    setIsNextDisabled(activeSlide === totalSlides - 1);
+  }, [activeSlide, totalSlides]);
+
   return (
     <div className={style.wrapper}>
-      <div className={style.btn} onClick={prev}>
+      <button
+        className={`${style.btn} ${isPrevDisabled ? " opacity-[0.3]" : ""}`}
+        onClick={prev}
+        disabled={isPrevDisabled}
+      >
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 320 512'
@@ -19,8 +32,12 @@ const Buttons = ({ next, prev }) => {
             stroke='#ff0000'
           ></path>
         </svg>
-      </div>
-      <div className={style.btn} onClick={next}>
+      </button>
+      <button
+        className={`${style.btn} ${isNextDisabled ? " opacity-5" : ""}`}
+        onClick={next}
+        disabled={isNextDisabled}
+      >
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 320 512'
@@ -36,7 +53,7 @@ const Buttons = ({ next, prev }) => {
             className='slider-svg'
           ></path>
         </svg>
-      </div>
+      </button>
     </div>
   );
 };

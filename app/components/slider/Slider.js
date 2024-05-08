@@ -37,6 +37,7 @@ const Slider = () => {
         <Swiper
           slidesPerView={"auto"}
           spaceBetween={20}
+          speed={1300}
           onSwiper={(swiper) => {
             setSwiperInstance(swiper);
             handleSlideChange();
@@ -57,7 +58,12 @@ const Slider = () => {
           ))}
         </Swiper>
 
-        <Buttons next={goNexts} prev={goPrevs} />
+        <Buttons
+          next={goNexts}
+          prev={goPrevs}
+          totalSlides={totalSlides}
+          activeSlide={activeSlide}
+        />
       </div>
     </div>
   );

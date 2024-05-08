@@ -4,6 +4,9 @@ import React from "react";
 const Slide = () => {
   return (
     <div className='slide'>
+      <div className='lines'>
+        <div className='line'></div>
+      </div>
       <div className='left_slide flex-1'>
         <h2 className='text-[40px] font-bold'>
           Pinch-to-zoom and set your magnification preference for use across

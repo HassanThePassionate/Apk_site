@@ -31,30 +31,25 @@ const Slider = () => {
           }}
           modules={[Navigation]}
           className='mySwiper'
-          style={{ width: "100vw", overflow: "hidden" }}
+          style={{ width: "100vw", paddingRight: "632px" }}
         >
-          <div className='sliders'>
-            <SwiperSlide style={{ width: "1250px" }}>
-              <Slide />
-            </SwiperSlide>
-            <SwiperSlide style={{ width: "1250px" }}>
-              <Slide />
-            </SwiperSlide>
-            <SwiperSlide style={{ width: "1250px" }}>
-              <Slide />
-            </SwiperSlide>
-            <SwiperSlide style={{ width: "1250px" }}>
-              <Slide />
-            </SwiperSlide>
-            <SwiperSlide style={{ width: "1250px" }}>
-              <Slide />
-            </SwiperSlide>
-            <SwiperSlide style={{ width: "1250px" }}>
-              <Slide />
-            </SwiperSlide>
-          </div>
-          <Buttons next={goNexts} prev={goPrevs} />
+          <SwiperSlide style={{ width: "1280px" }}>
+            <Slide />
+          </SwiperSlide>
+          <SwiperSlide style={{ width: "1280px" }}>
+            <Slide />
+          </SwiperSlide>
+          <SwiperSlide style={{ width: "1280px" }}>
+            <Slide />
+          </SwiperSlide>
+          <SwiperSlide style={{ width: "1280px" }}>
+            <Slide />
+          </SwiperSlide>
+          <SwiperSlide style={{ width: "1280px" }}>
+            <Slide />
+          </SwiperSlide>
         </Swiper>
+        <Buttons next={goNexts} prev={goPrevs} />
       </div>
     </div>
   );

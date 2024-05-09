@@ -1,0 +1,91 @@
+.hero_card {
+  padding: 32px;
+  border: 1px solid #dadce0;
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  gap: 60px;
+}
+.hero_card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.hero_card:hover .hero_btn {
+  background-color: #000;
+  color: #fff;
+}
+
+.t_card {
+  gap: 55px;
+  padding: 32px;
+  border: 1px solid #dadce0;
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.t_card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.t_card:hover .btm {
+  background-color: #000;
+  color: #fff;
+}
+
+.left {
+  flex: 1;
+}
+.left h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: -0.25;
+  margin-bottom: 16px;
+}
+.left h3 {
+  color: #5f6368;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+}
+.left p {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 16px 0 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 0 0;
+  background: #fff;
+  border: 2px solid #202124;
+  border-radius: 96px;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  height: 48px;
+  line-height: 44px;
+  min-width: 36px;
+  outline: 0;
+  overflow: hidden;
+  padding: 20px 24px;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+  text-align: center;
+}/*# sourceMappingURL=card.module.css.map */

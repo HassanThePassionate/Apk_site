@@ -1,22 +1,22 @@
 import Link from "next/link";
 import React from "react";
-
+import style from "./video.module.css";
 const Video_com = () => {
   return (
     <div className='video_wrapper pt-[50px]'>
       <div className='container'>
         <div className=' flex flex-col items-center justify-center text-center'>
           <h1 className='text-[76px] font-bold'>
-            Youtube Video <strong className='st'>Downloader</strong>
+            Youtube Video <strong className={style.st}>Downloader</strong>
           </h1>
-          <p className='parap'>
+          <p className={style.parap}>
             Welcome to Auto Refresh Plus Your ultimate solution for automating
             webpage refreshes and monitoring dynamic content effortlessly. With
             a suite of powerful features, Auto Refresh Plus enhances your
             browsing experience by ensuring you&apos;re always up-to-date with
             the latest changes on your favorite websites
           </p>
-          <button className='chorme'>
+          <button className={style.chorme}>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               x='0px'

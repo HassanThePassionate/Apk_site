@@ -1,0 +1,27 @@
+.wrap {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.wrap .test {
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 24px;
+}
+.wrap .test h3 {
+  color: rgb(32, 33, 36);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.wrap .test a h2 {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+.wrap .test .box {
+  height: 12px;
+  width: 12px;
+  background-color: #34a853;
+}/*# sourceMappingURL=testmoinal.module.css.map */

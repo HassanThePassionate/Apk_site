@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import style from "./slide.module.css";
 
 const Slide = ({ id, activeSlide }) => {
   return (
-    <div className='slide'>
+    <div className={style.slide}>
       <div className='lines'>
         {[0, 1, 2, 3, 4].map((index) => (
           <div

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { FiPlus } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
+import style from "./faq.module.css";
 
 const Faq = ({ title, id }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,8 +12,10 @@ const Faq = ({ title, id }) => {
   };
 
   return (
-    <div className='faq_wrap cursor-pointer hover:bg-[#ddd] transition-all '>
-      <div className='faq ' onClick={toggleFaq}>
+    <div
+      className={`${style.faq_wrap} cursor-pointer hover:bg-[#ddd] transition-all`}
+    >
+      <div className={style.faq} onClick={toggleFaq}>
         <h4 className='text-[18px]'>{title}</h4>
         <FiPlus
           size={24}

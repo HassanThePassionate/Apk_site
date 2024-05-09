@@ -3,7 +3,7 @@ import React from "react";
 import { FaArrowDown } from "react-icons/fa6";
 const Last_card = () => {
   return (
-    <div className='l_card_wrapper'>
+    <div className='l_card_wrapper mt-[96px]'>
       <li>
         <Link href='#' className='card_links'>
           <p className='text-[#5f6368] tracking-[0.5px] text-[16px] font-medium leading-6 '>

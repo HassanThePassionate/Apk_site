@@ -9,7 +9,6 @@
   z-index: 2;
   left: 50px;
 }
-
 .btn {
   border: 2px solid black;
   display: flex;
@@ -20,12 +19,10 @@
   width: 65px;
   cursor: pointer;
 }
-
 .btn:hover {
   background-color: #dadce0;
 }
-
 .fade {
   opacity: 0.5;
   transition: opacity 0.5s ease;
-}/*# sourceMappingURL=button.module.css.map */
+}

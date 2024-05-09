@@ -1,6 +1,6 @@
 import React from "react";
 import Last_card from "./last_card/Last_card";
-
+import style from "./last.module.css";
 const Last = () => {
   return (
     <div className='last_wrapper my-[50px]'>
@@ -8,7 +8,7 @@ const Last = () => {
         <h2 className='text-[60px] font-bold leading-[68px]'>
           Explore ways to control <br /> your privacy.
         </h2>
-        <ul className='cards_lists'>
+        <ul className={style.cards_lists}>
           <Last_card />
           <Last_card />
           <Last_card />

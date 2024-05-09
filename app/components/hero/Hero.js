@@ -1,7 +1,8 @@
 import React from "react";
-import Card from "./Card";
-import T_Card from "../t_cards/T_Card";
-import Testmoinal from "../testmoinal/Testmoinal";
+import Card from "./card/Card";
+import T_Card from "./t_cards/T_Card";
+import Testmoinal from "./testmoinal/Testmoinal";
+import style from "./hero.module.css";
 
 const Hero = () => {
   return (
@@ -15,7 +16,7 @@ const Hero = () => {
           These resources assume that you have existing knowledge of how to
           build Android apps.
         </p>
-        <div className='hero_cards'>
+        <div className={style.hero_cards}>
           <Card
             title='Google I/O program details are now live!'
             para='Get a sneak peek of the Android content at Google I/O that helps you
@@ -34,7 +35,7 @@ const Hero = () => {
           <h2 className='text-[40px] font-semibold leading-10 pt-[50px]'>
             Developer Center
           </h2>
-          <div className='hero_cards'>
+          <div className={style.hero_cards}>
             <T_Card />
             <T_Card />
             <T_Card />

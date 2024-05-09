@@ -1,0 +1,27 @@
+.cards_lists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+.cards_lists li {
+  max-width: 220px;
+  flex: none;
+}
+.cards_lists li a {
+  min-height: 220px;
+  padding: 24px;
+  grid-template-columns: auto;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  row-gap: 16px;
+  border-radius: 16px;
+  box-shadow: 4px 12px 48px 0 rgba(0, 0, 0, 0.1);
+  display: grid;
+  height: 100%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.cards_lists li a:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}/*# sourceMappingURL=last.module.css.map */

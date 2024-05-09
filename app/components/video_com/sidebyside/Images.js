@@ -16,7 +16,7 @@ const Images = () => {
                 Download <span className={style.b_green}>4k</span> YouTube
                 Video.
               </h2>
-              <p className='text-[18px] mb-[32px]'>
+              <p className='text-[16px] mb-[32px]'>
                 Our Browser extension allows you to download mp4 from YouTube in
                 crystal-clear clarity, ranging from 4k right the way up to 8K!
                 This jaw-dropping resolution is available, but you can also use
@@ -53,7 +53,7 @@ const Images = () => {
               <h2 className='text-[40px] leading-[48px] font-bold mb-[16px]'>
                 Download YouTube <span className={style.b_green}>Shorts</span>
               </h2>
-              <p className='text-[18px] mb-[32px]'>
+              <p className='text-[16px] mb-[32px]'>
                 There is lots of great new content available on YouTube these
                 days, and it comes in the form of YouTube shorts! Our browser
                 extension also doubles as a Youtube Shorts downloader, meaning
@@ -82,7 +82,7 @@ const Images = () => {
                 Convert YouTube Video into{" "}
                 <span className={style.b_green}>MP3</span>
               </h2>
-              <p className='text-[18px] mb-[32px]'>
+              <p className='text-[16px] mb-[32px]'>
                 Enjoy listening to YouTube videos offline? Then our YouTube
                 music downloader allows you to convert YouTube to Mp3 and do
                 just that! Using our Mp3 YouTube converter is an easy process

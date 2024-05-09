@@ -19,7 +19,7 @@ const Hero = () => {
           build Android apps.
         </p>
         <Sm_Cards />
-        <div className={style.hero_cards}>
+        {/* <div className={style.hero_cards}>
           <Card
             title='Google I/O program details are now live!'
             para='Get a sneak peek of the Android content at Google I/O that helps you
@@ -31,7 +31,7 @@ const Hero = () => {
             para='Watch the keynote to learn how to accelerate your game development, optimize user acquisition, and supercharge user retention..'
             img='https://developer.android.com/static/images/cluster-illustrations/business-games-transformation.svg'
           />
-        </div>
+        </div> */}
       </div>
       <div className='main mt-[50px] '>
         <div className='container'>
@@ -39,12 +39,12 @@ const Hero = () => {
             Developer Center
           </h2>
           <Thumb_Cards />
-          <div className={style.hero_cards}>
+          {/* <div className={style.hero_cards}>
             <T_Card />
             <T_Card />
             <T_Card />
-          </div>
-          <h2 className='text-[40px] font-semibold leading-10 pt-11'>
+          </div> */}
+          <h2 className='text-[40px] font-semibold leading-10 pt-11 mt-[30px]'>
             Kotlin language training
           </h2>
           <Testmoinal />

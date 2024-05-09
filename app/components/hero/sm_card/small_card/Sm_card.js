@@ -15,10 +15,15 @@ const Sm_card = ({ title, para, btn, img }) => {
             className={style.img}
           />
         </Link>
-        <div className={style.left}>
+        <div className={style.left} style={{ minHeight: "250px" }}>
           <h2>{title}</h2>
           <p>{para}</p>
-          <button className={style.hero_btn}>{btn}</button>
+          <button
+            className={style.hero_btn}
+            style={{ marginTop: "auto", maxWidth: "150px" }}
+          >
+            {btn}
+          </button>
         </div>
       </div>
     </div>

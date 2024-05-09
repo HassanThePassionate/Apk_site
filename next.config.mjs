@@ -10,6 +10,14 @@ const nextConfig = {
         protocol: "https",
         hostname: "developer.android.com",
       },
+      {
+        protocol: "https",
+        hostname: "i1.wp.com",
+      },
+      {
+        protocol: "https",
+        hostname: "i0.wp.com",
+      },
     ],
   },
 };

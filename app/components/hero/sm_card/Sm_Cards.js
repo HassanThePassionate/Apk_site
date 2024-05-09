@@ -6,16 +6,16 @@ const Sm_Cards = () => {
     <div>
       <div className={style.sm_cards}>
         <Sm_card
-          title='Build a high-quality app or game'
-          para=' Drive long term success by improving key app quality components including content, user experience and technical performance.'
-          btn='Game services'
-          img='https://developer.android.com/static/images/picto-icons/badge.svg'
+          title='YouTube Video Downloader'
+          para='Our free Browser Extension allows you to download YouTube videos in different video qualities ranging from 360p to ultra high definition 4k. Supports all formats, including AVI, FLV, WebM, MP4 and MP3 without size and length limits.'
+          img='https://i1.wp.com/addoncrop.com/wp-content/uploads/2021/03/icon-popup.png'
+          btn='Discover How'
         />
         <Sm_card
-          img='https://developer.android.com/static/images/spot-icons/tools-update.svg'
-          title='Release with confidence'
+          img='https://i0.wp.com/addoncrop.com/wp-content/uploads/2021/03/Addoncrop-YouTube-video-downloader-icon.png'
+          title='Soundcloud Music Downloader'
           para='
-          Make your app launch a success with tools and strategies to help you publish, manage, and distribute your app worldwide
+          Download single tracks or entire playlists of Soundcloud to mp3 music with ID3 tags, ease & all for free! Ours best Soundcloud to mp3 converter browser extension supports a range of browsers, as well as letting you cut & trim your favourite audio content to your exact requirements.
           '
           btn='Discover How'
         />

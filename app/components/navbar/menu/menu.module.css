@@ -70,6 +70,8 @@
 .navbar .list li .btn span {
   font-weight: 500;
   color: rgb(32, 33, 36);
+  font-size: 17px;
+  line-height: 23px;
 }
 .navbar .dropdown {
   border-radius: 0 0 24px 24px;

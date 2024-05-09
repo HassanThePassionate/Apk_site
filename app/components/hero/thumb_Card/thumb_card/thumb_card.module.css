@@ -13,4 +13,10 @@
 .t_card:hover .btn {
   background-color: #000;
   color: #fff;
-}/*# sourceMappingURL=thumb_card.module.css.map */
+}
+
+.left {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 280px !important;
+} /*# sourceMappingURL=thumb_card.module.css.map */

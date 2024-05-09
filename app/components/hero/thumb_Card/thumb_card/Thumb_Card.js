@@ -10,7 +10,7 @@ const Thumb_Card = ({ title, img, para }) => {
         <Link href='#'>
           <Image src={img} className={style.img} width={80} height={80} />
         </Link>
-        <div className={`${style.left} flex flex-col min-h-[280px]`}>
+        <div className={styles.left}>
           <h2>{title}</h2>
           <p>{para}</p>
 

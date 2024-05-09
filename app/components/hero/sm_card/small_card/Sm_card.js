@@ -2,10 +2,10 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import style from "./sm_card.module.css";
-const Sm_card = ({ title, para, btn, img }) => {
+const Sm_card = ({ title, para, btn, img, color }) => {
   return (
     <div>
-      <div className={style.sm_card}>
+      <div className={`${style.sm_card} `} style={{ background: color }}>
         <Link href='#'>
           <Image
             src={img}

@@ -1,0 +1,12 @@
+.t_card {
+  padding: 32px;
+  border: 1px solid #dadce0;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.t_card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}/*# sourceMappingURL=thumb_card.module.css.map */

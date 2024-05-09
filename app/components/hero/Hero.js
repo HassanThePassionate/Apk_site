@@ -3,6 +3,8 @@ import Card from "./card/Card";
 import T_Card from "./t_cards/T_Card";
 import Testmoinal from "./testmoinal/Testmoinal";
 import style from "./hero.module.css";
+import Sm_Cards from "./sm_card/Sm_Cards";
+import Thumb_Cards from "./thumb_Card/Thumb_Cards";
 
 const Hero = () => {
   return (
@@ -16,6 +18,7 @@ const Hero = () => {
           These resources assume that you have existing knowledge of how to
           build Android apps.
         </p>
+        <Sm_Cards />
         <div className={style.hero_cards}>
           <Card
             title='Google I/O program details are now live!'
@@ -35,6 +38,7 @@ const Hero = () => {
           <h2 className='text-[40px] font-semibold leading-10 pt-[50px]'>
             Developer Center
           </h2>
+          <Thumb_Cards />
           <div className={style.hero_cards}>
             <T_Card />
             <T_Card />

@@ -12,7 +12,7 @@ const Images = () => {
                 Android Earthquake Alert System
               </div>
               <h2 className='text-[40px] leading-[48px] font-bold mb-[16px]'>
-                Download 4k YouTube Video.
+                Download <span className='b_green'>4k</span> YouTube Video.
               </h2>
               <p className='text-[18px] mb-[32px]'>
                 Our Browser extension allows you to download mp4 from YouTube in
@@ -49,7 +49,7 @@ const Images = () => {
                 Emergency Location Service
               </div>
               <h2 className='text-[40px] leading-[48px] font-bold mb-[16px]'>
-                Download YouTube Shorts.
+                Download YouTube <span className='b_green'>Shorts</span>
               </h2>
               <p className='text-[18px] mb-[32px]'>
                 There is lots of great new content available on YouTube these
@@ -75,7 +75,7 @@ const Images = () => {
             <div className='left_iteam '>
               <div className='box_text text-[16px]'>Unknown tracker alerts</div>
               <h2 className='text-[40px] leading-[48px] font-bold mb-[16px]'>
-                Convert YouTube Video into MP3.
+                Convert YouTube Video into <span className='b_green'>MP3</span>
               </h2>
               <p className='text-[18px] mb-[32px]'>
                 Enjoy listening to YouTube videos offline? Then our YouTube

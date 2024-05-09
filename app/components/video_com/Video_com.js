@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Video_com = () => {
@@ -67,6 +68,29 @@ const Video_com = () => {
             </svg>
             <span>Add to Chorme</span>
           </button>
+          <h4 className='mt-[40px]'>
+            Also available for &nbsp;
+            <Link
+              href='#'
+              className=' font-bold  border-b-2 border-black hover:border-none'
+            >
+              Edge
+            </Link>
+            ,&nbsp;
+            <Link
+              href='#'
+              className=' font-bold  border-b-2 border-black hover:border-none'
+            >
+              Opera
+            </Link>
+            , and &nbsp;
+            <Link
+              href='#'
+              className=' font-bold  border-b-2 border-black hover:border-none'
+            >
+              Firefox
+            </Link>
+          </h4>
         </div>
       </div>
     </div>

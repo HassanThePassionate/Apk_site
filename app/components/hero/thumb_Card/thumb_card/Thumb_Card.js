@@ -6,7 +6,7 @@ import Image from "next/image";
 const Thumb_Card = ({ title, img, para }) => {
   return (
     <>
-      <div className={`${styles.t_card} bg-[#D1E3FC]`}>
+      <div className={`${styles.t_card} bg-[#fff]`}>
         <Link href='#'>
           <Image src={img} className={style.img} width={80} height={80} />
         </Link>

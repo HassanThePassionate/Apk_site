@@ -7,7 +7,6 @@ const Testmoinal = () => {
   return (
     <div className={style.wrap}>
       <div className={style.test}>
-        <h3>Course</h3>
         <Link href='#'>
           <h2>Android Basics with Compose</h2>
         </Link>
@@ -20,12 +19,6 @@ const Testmoinal = () => {
           data from the network, testing, and more. No programming experience
           required.
         </p>
-        <span className='flex items-center gap-[10px]'>
-          <div className={style.box}></div>
-          <span>
-            <i>Training level:</i> <b>Beginner</b>
-          </span>
-        </span>
         <button
           className={`${styles.hero_btn} hover:bg-black hover:text-white`}
         >
@@ -35,7 +28,7 @@ const Testmoinal = () => {
           <h2 className='text-2xl font-bold pb-[20px]'>
             Frequently asked questions
           </h2>
-          <div className={`${style.faqs} flex flex-col gap-9 pt-[20px]`}>
+          <div className={`${style.faqs} flex flex-col gap-4 pt-[20px]`}>
             <Faq
               title='How are these icons different from other packs?'
               id='1'

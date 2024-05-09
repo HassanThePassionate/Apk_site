@@ -13,14 +13,18 @@ body {
 }
 @font-face {
   font-family: "Basier Circle";
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   src: url("../fonts/BasierSquare-Regular.woff");
 }
 @font-face {
   font-family: "Basier Circle";
   font-weight: 600;
   src: url("../fonts/Basier\ Square\ SemiBold.otf");
+}
+@font-face {
+  font-family: "Basier Circle";
+  font-weight: 500;
+  src: url("../fonts/Basier\ Square\ Medium.otf");
 }
 .container {
   margin: 0 auto;
@@ -30,7 +34,10 @@ body {
 .main {
   background-color: #f7f9fa;
 }
-
+p {
+  font-family: "Basier Circle" !important ;
+  font-weight: normal !important;
+}
 @media only screen and (min-width: 1160px) {
   .android-header {
     border-radius: 0 0 24px 24px;

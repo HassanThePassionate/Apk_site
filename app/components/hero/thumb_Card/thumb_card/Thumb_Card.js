@@ -15,7 +15,7 @@ const Thumb_Card = ({ title, img, para }) => {
           <p>{para}</p>
 
           <button
-            className={`${style.hero_btn} hover:bg-black hover:text-white `}
+            className={`${style.hero_btn} ${styles.btn} hover:bg-black hover:text-white `}
             style={{ marginTop: "auto", maxWidth: "150px" }}
           >
             Discover How

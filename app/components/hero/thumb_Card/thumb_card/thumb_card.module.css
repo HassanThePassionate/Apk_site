@@ -9,4 +9,8 @@
 }
 .t_card:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.t_card:hover .btn {
+  background-color: #000;
+  color: #fff;
 }/*# sourceMappingURL=thumb_card.module.css.map */

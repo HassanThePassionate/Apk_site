@@ -8,5 +8,9 @@
   transition: all 0.3s ease;
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .btn {
+      background-color: #000;
+      color: #fff;
+    }
   }
 }

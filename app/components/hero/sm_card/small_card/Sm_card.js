@@ -15,7 +15,7 @@ const Sm_card = ({ title, para, btn, img }) => {
             className={style.img}
           />
         </Link>
-        <div className={style.left} style={{ minHeight: "250px" }}>
+        <div className={`${style.left} min-h-[250px] flex flex-col`}>
           <h2>{title}</h2>
           <p>{para}</p>
           <button

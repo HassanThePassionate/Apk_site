@@ -3,25 +3,24 @@
 @tailwind utilities;
 
 /* Resest Styles */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
-  font-family: "google_Sans";
+  font-family: "Basier Circle";
 }
 html,
 body {
   overflow-x: hidden;
 }
 @font-face {
-  font-family: "google_Sans";
-  src: url("../fonts/Regular.ttf");
+  font-family: "Basier Circle";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/BasierSquare-Regular.woff");
 }
 @font-face {
-  font-family: "google_Sanss";
-  src: url("../fonts/Medium.ttf");
-}
-@font-face {
-  font-family: "google_Sansss";
-  src: url("../fonts/Bold.ttf");
+  font-family: "Basier Circle";
+  font-weight: 600;
+  src: url("../fonts/Basier\ Square\ SemiBold.otf");
 }
 .container {
   margin: 0 auto;

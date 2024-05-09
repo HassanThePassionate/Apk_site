@@ -10,10 +10,10 @@ const Hero = () => {
   return (
     <div className='hero_wrapper'>
       <div className='container'>
-        <h2 className='text-[40px] font-semibold leading-10 pt-11 mb-[16px]'>
+        <h2 className='text-[48px] font-semibold leading-[56px] pt-11 mb-[16px]'>
           For experienced Android developers
         </h2>
-        <p className='w-[60%]'>
+        <p className='w-[60%] text-[#575757]' style={{ fontSize: "18px" }}>
           Dive deeper into more advanced topics in Modern Android Development.
           These resources assume that you have existing knowledge of how to
           build Android apps.

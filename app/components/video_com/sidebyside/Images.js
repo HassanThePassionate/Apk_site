@@ -25,10 +25,10 @@ const Images = () => {
                 more efficient.
               </p>
               <button className={style.watch_btn}>
-                Watch the video{" "}
+                Watch the video
                 <span>
                   <IoIosPlayCircle size={24} color='#c6ff00' />
-                </span>{" "}
+                </span>
               </button>
             </div>
             <div className='right_iteam'>
@@ -61,10 +61,10 @@ const Images = () => {
                 your choosing.
               </p>
               <button className={style.watch_btn}>
-                Watch the video{" "}
+                Watch the video
                 <span>
                   <IoIosPlayCircle size={24} color='#c6ff00' />
-                </span>{" "}
+                </span>
               </button>
             </div>
           </div>
@@ -79,7 +79,7 @@ const Images = () => {
                 Unknown tracker alerts
               </div>
               <h2 className='text-[40px] leading-[48px] font-bold mb-[16px]'>
-                Convert YouTube Video into{" "}
+                Convert YouTube Video into
                 <span className={style.b_green}>MP3</span>
               </h2>
               <p className='text-[16px] mb-[32px]'>
@@ -91,10 +91,10 @@ const Images = () => {
                 free offline music you could ever need.
               </p>
               <button className={style.watch_btn}>
-                Watch the video{" "}
+                Watch the video
                 <span>
                   <IoIosPlayCircle size={24} color='#c6ff00' />
-                </span>{" "}
+                </span>
               </button>
             </div>
             <div className='right_iteam'>

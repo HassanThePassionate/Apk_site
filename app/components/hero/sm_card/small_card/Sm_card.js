@@ -5,8 +5,12 @@ import style from "./sm_card.module.css";
 const Sm_card = ({ title, para, btn, img, color }) => {
   return (
     <div>
-      <div className={`${style.sm_card} `} style={{ background: color }}>
-        <Link href='#'>
+      <Link
+        href={"/video"}
+        className={`${style.sm_card} `}
+        style={{ background: color }}
+      >
+        <div href='#'>
           <Image
             src={img}
             alt='img'
@@ -14,7 +18,7 @@ const Sm_card = ({ title, para, btn, img, color }) => {
             height={80}
             className={style.img}
           />
-        </Link>
+        </div>
         <div className={`${style.left} min-h-[250px] flex flex-col`}>
           <h2>{title}</h2>
           <p>{para}</p>
@@ -25,7 +29,7 @@ const Sm_card = ({ title, para, btn, img, color }) => {
             {btn}
           </button>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };

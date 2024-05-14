@@ -7,7 +7,7 @@
   position: relative;
   bottom: 130px;
   z-index: 2;
-  left: 20%;
+  margin-left: 370px;
 }
 
 .btn {
@@ -32,6 +32,11 @@
 
 @media screen and (max-width: 1370px) {
   .wrapper {
-    left: 50px;
+    margin-left: 70px;
+  }
+}
+@media screen and (min-width: 2200px) {
+  .wrapper {
+    margin-left: 750px;
   }
 }/*# sourceMappingURL=button.module.css.map */

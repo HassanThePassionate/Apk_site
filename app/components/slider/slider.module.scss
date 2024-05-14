@@ -1,12 +1,20 @@
 .mySwiper {
-  width: 100vw !important;
   padding-right: 652px !important;
   padding-left: 320px !important;
 }
+@media screen and (min-width: 2200px) {
+  .mySwiper {
+    padding-right: 870px !important;
+    padding-left: 700px !important;
+  }
+}
 @media (max-width: 1370px) {
   .mySwiper {
-    width: 100vw !important;
-    padding-right: 652px !important;
     padding-left: 16px !important;
+  }
+}
+@media screen and (min-width: 3000px) {
+  .mySwiper {
+    padding-right: 1030px !important;
   }
 }

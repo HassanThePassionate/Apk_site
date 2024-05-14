@@ -34,6 +34,7 @@ const Slider = () => {
   return (
     <div className='slider_wrapper mt-[80px] w-full'>
       <SlideLines totalSlides={totalSlides} activeSlide={activeSlide} />
+
       <Swiper
         slidesPerView={"auto"}
         spaceBetween={20}

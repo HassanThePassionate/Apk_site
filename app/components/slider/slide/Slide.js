@@ -22,7 +22,15 @@ const Slide = ({ id, activeSlide }) => {
         </h2>
       </div>
       <div className='right_slide'>
-        <Image src='/3.webp' alt='img' height={600} width={600} />
+        <video
+          src='https://kstatic.googleusercontent.com/files/4eec0abbde3beb0b8e6980853262dc4fd92bf6b75f68e521c28ffe27add04dce5dd3879c03dd3dd72b4f8b8868593279e27af1f2308e369d04da59bfba7d70e0'
+          loop
+          muted
+          height={600}
+          width={600}
+          autoPlay
+        ></video>
+        {/* <Image src='/3.webp' alt='img' height={600} width={600} /> */}
       </div>
     </div>
   );

@@ -1,0 +1,13 @@
+.mySwiper {
+  width: 100vw !important;
+  padding-right: 652px !important;
+  padding-left: 320px !important;
+}
+
+@media (max-width: 1370px) {
+  .mySwiper {
+    width: 100vw !important;
+    padding-right: 652px !important;
+    padding-left: 16px !important;
+  }
+}/*# sourceMappingURL=slider.module.css.map */

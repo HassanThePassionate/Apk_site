@@ -1,0 +1,12 @@
+.slide_lines {
+  display: flex;
+  align-items: center;
+  margin-left: 330px;
+  gap: 8px;
+}
+
+@media screen and (max-width: 1370px) {
+  .slide_lines {
+    margin-left: 10px;
+  }
+}/*# sourceMappingURL=slideLines.module.css.map */

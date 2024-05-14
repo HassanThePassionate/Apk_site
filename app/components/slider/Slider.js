@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Slide from "./slide/Slide";
 import { Swiper, SwiperSlide } from "swiper/react";
+import style from "./slider.module.css";
 
 // Import Swiper styles
 import "swiper/css";
@@ -32,39 +33,36 @@ const Slider = () => {
 
   return (
     <div className='slider_wrapper mt-[80px] w-full'>
-      <div className='container'>
-        <SlideLines totalSlides={totalSlides} activeSlide={activeSlide} />
-        <Swiper
-          slidesPerView={"auto"}
-          spaceBetween={20}
-          speed={1300}
-          onSwiper={(swiper) => {
-            setSwiperInstance(swiper);
-            handleSlideChange();
-          }}
-          onSlideChange={handleSlideChange}
-          navigation={{
-            nextEl: "#nexts",
-            prevEl: "#prevs",
-          }}
-          modules={[Navigation]}
-          className='mySwiper'
-          style={{ width: "100vw", paddingRight: "652px" }}
-        >
-          {[...Array(totalSlides)].map((_, index) => (
-            <SwiperSlide key={index} style={{ width: "1280px" }}>
-              <Slide id={index} activeSlide={activeSlide} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+      <SlideLines totalSlides={totalSlides} activeSlide={activeSlide} />
+      <Swiper
+        slidesPerView={"auto"}
+        spaceBetween={20}
+        speed={1300}
+        onSwiper={(swiper) => {
+          setSwiperInstance(swiper);
+          handleSlideChange();
+        }}
+        onSlideChange={handleSlideChange}
+        navigation={{
+          nextEl: "#nexts",
+          prevEl: "#prevs",
+        }}
+        modules={[Navigation]}
+        className={style.mySwiper}
+      >
+        {[...Array(totalSlides)].map((_, index) => (
+          <SwiperSlide key={index} style={{ width: "1280px" }}>
+            <Slide id={index} activeSlide={activeSlide} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
-        <Buttons
-          next={goNexts}
-          prev={goPrevs}
-          totalSlides={totalSlides}
-          activeSlide={activeSlide}
-        />
-      </div>
+      <Buttons
+        next={goNexts}
+        prev={goPrevs}
+        totalSlides={totalSlides}
+        activeSlide={activeSlide}
+      />
     </div>
   );
 };
